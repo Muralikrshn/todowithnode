@@ -9,14 +9,14 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // CORS configuration
-const corsOptions = {
-  origin: 'https://todowithnode-client.vercel.app/',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type'],
+// const corsOptions = {
+//   origin: 'https://todowithnode-client.vercel.app/',
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   allowedHeaders: ['Content-Type'],
   
-};
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Access req.body
 app.use(express.json());
