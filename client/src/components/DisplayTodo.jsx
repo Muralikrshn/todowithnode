@@ -26,7 +26,7 @@ const DisplayTodo = () => {
   }
 
   async function getTodos(){
-    const res = await fetch("http://localhost:4000/todos").then((res) => res.json())
+    const res = await fetch("https://todowithnode.vercel.app/todos").then((res) => res.json())
     // console.log(res)
     setTodos(res)
     getTodos();

@@ -11,7 +11,7 @@ const InputTodo = () => {
       "description": description
     };
     try {
-      const response = await fetch("http://localhost:4000/todos/insert", 
+      const response = await fetch("https://todowithnode.vercel.app/todos/insert", 
         {
           method:"POST",
           headers:{ "Content-Type": "application/json" },
