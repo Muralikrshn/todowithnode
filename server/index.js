@@ -8,15 +8,11 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-// CORS configuration
-// const corsOptions = {
-//   origin: 'https://todowithnode-client.vercel.app/',
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   allowedHeaders: ['Content-Type'],
-  
-// };
+// Enable CORS for your client domain
+app.use(cors({
+  origin: 'https://todowithnode-client.vercel.app'  // Replace with your client's domain
+}));
 
-app.use(cors());
 
 // Access req.body
 app.use(express.json());
