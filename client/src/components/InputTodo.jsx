@@ -11,7 +11,7 @@ const InputTodo = () => {
       "description": description
     };
     try {
-      const response = await fetch("https://todowithnode-gnd4itajj-somu-murali-mohan-reddys-projects.vercel.app/todos/insert", 
+      const response = await fetch("https://todowithnode-nm1vnvwzh-somu-murali-mohan-reddys-projects.vercel.app/todos/insert", 
         {
           method:"POST",
           headers:{ "Content-Type": "application/json" },

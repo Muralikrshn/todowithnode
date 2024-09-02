@@ -26,7 +26,9 @@ const DisplayTodo = () => {
   }
 
   async function getTodos(){
-    const res = await fetch("https://todowithnode-gnd4itajj-somu-murali-mohan-reddys-projects.vercel.app/todos").then((res) => res.json())
+    
+    const res = await fetch("https://todowithnode-nm1vnvwzh-somu-murali-mohan-reddys-projects.vercel.app/todos").then((res) => res.json())
+
     // console.log(res)
     setTodos(res)
     getTodos();

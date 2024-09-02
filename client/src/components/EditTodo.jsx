@@ -6,7 +6,7 @@ const EditTodo = ({todo}) => {
   async function EditText(id){
     try {
       const body = { description };
-      const response = await fetch(`https://todowithnode-gnd4itajj-somu-murali-mohan-reddys-projects.vercel.app/todos/update/${id}`,
+      const response = await fetch(`https://todowithnode-nm1vnvwzh-somu-murali-mohan-reddys-projects.vercel.app/todos/update/${id}`,
         {
           method:"PUT",
           headers:{"Content-Type":"application/json"},
