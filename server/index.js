@@ -12,7 +12,7 @@ app.use(cors());
 // Access req.body
 app.use(express.json());
 
-app.use("/", (req,res) => {
+app.get("/", (req,res) => {
   res.send("Server is running")
 })
 
