@@ -8,7 +8,7 @@ const DisplayTodo = () => {
 
   async function deleteTodo(id){
     try {
-      await fetch(`http://localhost:4000/todos/delete?todo_id=${id}`,
+      await fetch(`https://todowithnode.vercel.app/todos/delete?todo_id=${id}`,
         {
           method:"DELETE"
           // headers:{
