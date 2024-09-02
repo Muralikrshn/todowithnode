@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { request } from 'express'
 import cors from 'cors'
 
 import pool from './db.js';
@@ -10,9 +10,10 @@ const port = process.env.PORT || 4000;
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://todowithnode-client-2v75o0h66-somu-murali-mohan-reddys-projects.vercel.app',
+  origin: 'https://todowithnode-client.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type'],
+  
 };
 
 app.use(cors(corsOptions));
