@@ -33,11 +33,11 @@ const InputTodo = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center my-5">Input Todo</h1>
+      <h1 className="text-center my-5">deal2deals</h1>
       <form onSubmit={onSubmitForm} action="" method="post" className="d-flex ">
         <input 
           type="text" 
-          placeholder="Add todo"  className="form-control" 
+          placeholder="Add deal"  className="form-control" 
           value={description}
           onChange={e => setDescription(e.target.value)}
         />
