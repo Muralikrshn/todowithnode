@@ -43,7 +43,7 @@ app.get("/todos", async (req, res) => {
   const data = await pool.query(
     "SELECT * FROM todo;"
   )
-  res.header("Access-Control-Allow-Origin", "https://todowithnode.vercel.app/")
+  res.header("Access-Control-Allow-Origin", "https://todowithnode-client.vercel.app/")
   res.send(data.rows)
 })
 
