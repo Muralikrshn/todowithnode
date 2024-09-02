@@ -12,6 +12,10 @@ app.use(cors());
 // Access req.body
 app.use(express.json());
 
+app.use("/", (req,res) => {
+  res.send("Server is running")
+})
+
 // create todo
 app.post("/todos/insert", async (req, res) => {
   try{
