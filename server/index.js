@@ -8,8 +8,14 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-// cors accessibility for client server response connection
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: 'https://todowithnode-client-2v75o0h66-somu-murali-mohan-reddys-projects.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+};
+
+app.use(cors(corsOptions));
 
 // Access req.body
 app.use(express.json());
